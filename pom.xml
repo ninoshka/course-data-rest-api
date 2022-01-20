@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.springboot.data</groupId>
+  <artifactId>course-api-data</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Springboot API course</name>
+  
+  <!-- Inheriting all default maven configuration from starter parent 
+  	   This tag basically tells the below starter-web dependency which version 
+  	   jars it needs to install.
+  	   Installs all needed dependencies with the best compatible versions of jars
+  -->
+  <parent>
+	  <groupId>org.springframework.boot</groupId>
+	  <artifactId>spring-boot-starter-parent</artifactId>
+	  <version>1.4.2.RELEASE</version>
+  </parent>
+  
+  <!-- Adding parent dependencies. This adds all jars needed to set up a web application -->
+  <dependencies>
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-starter-web</artifactId>
+  	</dependency>
+  	
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-starter-data-jpa</artifactId>
+  	</dependency>
+  	
+  	<dependency>
+  		<groupId>org.apache.derby</groupId>
+  		<artifactId>derby</artifactId>
+  		<scope>runtime</scope>
+  	</dependency>
+  </dependencies>  
+  
+  <properties>
+  	<java.version>1.8</java.version>
+  </properties>
+  
+</project>

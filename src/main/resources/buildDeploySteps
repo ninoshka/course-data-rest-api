@@ -1,0 +1,5 @@
+--mvn clean install --> builds code, runs junit, gives jar in projectdir/target
+--java -jar jarNameHere
+
+--connecting db. specify in application.properties
+spring.datasource.url
